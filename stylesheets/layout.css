@@ -19,10 +19,17 @@ html{
 header{
     width: 100%;
     float: center;
-    position: relative;
+    position: fixed;
+    background-color: black;
+    
 }
+ main{
+     margin-top: 100px;
+ }
 header img{
     float: left;
+    max-width: 50%;
+    
 }
 
 .mainphoto{
@@ -45,5 +52,10 @@ footer {
     font-family: sans-serif;
     font-style: bold;
     font-size: .75rem;
+    max-width: 100%
 
+}
+.socialicons{
+    
+    max-width: 100%;
 }
