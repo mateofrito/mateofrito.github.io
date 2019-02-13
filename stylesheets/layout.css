@@ -6,12 +6,40 @@ box-sizing: border-box;
 
 }
 .container{
-    margin: 0 auto;
-    width: 1000px;
+   display: flex;
+   flex-direction: column;
+
+   margin: 2rem auto;
+   padding: 11px;
+   max-width: 1000;;
+   background-color: darkgrey;
+   flex-wrap: wrap;
+}
+.flex{
+    
+    padding: 11px;
+    background-color:white;
+
+
+
+}
+.flexheaders{
+background-color: black;
+color: white;
+
+}
+.flex:first-child{
+    margin: 0;
 }
 
 html{
-    font-family: sans-serif;
+    font-family: helvetica, sans-serif;
+}
+
+.logo{
+    
+    width: 100%;
+
 }
 
 
@@ -22,7 +50,14 @@ header{
     position: fixed;
     background-color: black;
     color: white;
+    height: 80px;
     
+}
+
+header nav{
+    float: right;
+    
+
 }
  main{
      margin-top: 80px;
@@ -38,7 +73,7 @@ header img{
 }
 
 header nav{
-    float: right;
+   
     
 }
 figcaption{
@@ -57,7 +92,8 @@ footer {
     font-family: sans-serif;
     font-style: bold;
     font-size: .75rem;
-    max-width: 100%
+    max-width: 100%;
+     
 
 }
 .socialicons{
