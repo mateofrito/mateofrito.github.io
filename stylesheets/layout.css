@@ -2,28 +2,117 @@
     margin: 0;
     padding: 0.1rem;
     box-sizing: border-box;
-    
+    font-family: 'Montserrat', sans-serif;
     
     }
+
+.items{
+  box-shadow:  0 4px 8px 0;
+  background-color: white;
+  justify-content: left;
+  display: flex;
+  align-items: left;
+  height: auto;
+  
+  
+}
+
+
+.caption{
+     
+  
+  
+  
+}
+
+.content{
+  width: 99%;
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #bb0000;
+  flex: wrap;
+  flex-direction: center;
+  align-items: center;
+  display: grid;
+  
+ 
+}
+
+@media all and (min-width: 200px){
+  .content{
+    width: 100%;
+  }
+  
+  @media all and (min-width: 200px){
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+.bio{
+  width: 99%;
+  border: 1px solid black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: white;
+  float: right;
+  box-shadow:  0 4px 8px 0;
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+    .contentbox{
+  width: 99%;
+  border: 1px solid black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: white;
+  float: right;
+  box-shadow:  0 4px 8px 0;
+ 
+}
+    
     .container{
-       display: flex;
-       flex-direction: column;
+      flex-direction: column
+        ;
+       border: 1px solid black;
+     background-color: white;
+     justify-content: center;
+     display: flex;
+    align-items: left;
+    height: auto;
+      box-shadow:  0 4px 8px 0;
+      width: 99%
+        
+      
        
-       margin: 2rem auto;
-       justify-content: space-between;
-       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-       max-width: 1000;;
-       background-color: black;
-       flex-wrap: wrap;
+      
+    }
+    
+   
+
+   .grid{
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: min-content;
+    grid-gap: 10px;
+  }
+
+    .item img{ 
+     width: 99%;
+      align-items: center;
+      box-shadow:  0 4px 8px 0;
+      background-color: black;
+      
     }
     .flex{
         margin-left: 1px;
         margin-top: 1px;
         margin-bottom: 1px;
-        justify-content: center;
+        justify-content: left;
         padding: 11px;
-        background-color:white;
-        border-bottom: 4px black;
+        background-color:;
+        border: 1px solid black;
+     
+      
     
     
     
@@ -39,29 +128,33 @@
     }
     
     html{
-        font-family: helvetica, sans-serif;
+        font-family: 'proximanova','Helvetica Neue', Helvetica, Arial,sans-serif;
     }
     
     .logo{
+        margin-left: 0rem;
+        max-width: 100%;
         
-        width: 100%;
     
     }
     
     
     
     header{
+        display: flex;
         width: 100%;
-        float: center;
+        align-items: center;
         position: fixed;
         background-color: black;
         color: white;
-        height: 80px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 65px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,         0, 0, 0.19);
+        opacity: .90
+      
         
     }
     
-    header nav{
+    .headernav{
         float: right;
         
     
@@ -70,13 +163,13 @@
          margin-top: 80px;
      }
     header img{
-        float: left;
+         float: left;
         max-width: 100%;
         
     }
     
     .mainphoto{
-        width: 100%
+        width: 100%;
     }
     
     header nav{
@@ -92,6 +185,7 @@
         clear: both;
         content: '';
         display: inline-block;
+        align-items: center;
     }
     footer {
         background-color: black;
@@ -100,18 +194,15 @@
         font-style: bold;
         font-size: .75rem;
         max-width: 100%;
-        
-        
+     
+    }
+       
         
         
 
          
     
-    }
-    .socialicons{
-        
-        max-width: 100%;
-    }
+    
     nav{
         
         float: right;
@@ -152,8 +243,9 @@
       
       li:hover,
       li:focus-within {
-          background: red;
+          background: gray;
           cursor: pointer;
+          font-style: bold;
       }
       
       li:focus-within a {
