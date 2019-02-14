@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="icon" type="image/png" href="./socialmediaimages/Fryfavicon.ico">
     <meta name="viewport" content="width=device-width", initial-scale=1.0">
     <link rel="stylesheet" href ="./stylesheets/layout.css">
@@ -15,27 +16,33 @@
     
     
     <header class ="clearfix">
-           <figure class="logo"><img src="./images/mattfrywhitelogo.png" alt="logo" width="212" length="68"></figure>
-           <nav role="navigation">
+           <figure class="logo"><img src="https://mateofrito.github.io/images/mattfrywhitelogo.png" alt="logo" width="200" ></figure>
+           <nav role="navigation" class="headernav">
                <ul>
-                    <li><a href="#">Navigation</a>
-                        <ul class="dropdown">
-                            <li><a href="#skill set">Skill Set</a></li>
-                            <li><a href="#Bio">Bio</a></li>
+                    <li class="nav_buttons"><a href="#Bio">Bio</a></li>
+                    <li class="nav_buttons"><a href="#projects">Projects</></li>                              
+                    
+                    <li class="nav_buttons"><a href="#skill set">Skill Set</a></li>
+                    
                             
-                        </ul>
-                    </li>
+                 
+                    
                 </ul>
             </nav>
        </header>
 <main>
-        <section id="bio"></section>
-            <a id="Bio"><h1>About me</h1></a>
-            <figure class="mainphoto">
-            <img src="./images/mattfrySnS.jpg" alt="me">
-            <figcaption>Look at this handsome beast.
-            </figcaption>
+     <div class="grid m-0 p-0">
+             
+            <section class="content">
+            <figure class="item img">
+                <img src="./images/columbusskyline.jpg" alt="me">
+                
             </figure>
+            <section class="bio">
+
+                <img src="./images/goldblum.jpg">
+            <a id="Bio"><h1>About me</h1></a>
+            
             <p>Born in Springfield, raised in rural Champaign County and a resident of the Columbus Metro
                 area since 2001.  I am a graduate of DeVry Columbus, with a Bachelors Degree in Business Administration with a concentration in Business Information System.  
                 After college, I went into restaurant management as there were not many IT opportunties in Columbus and I still had a love
@@ -54,6 +61,7 @@
             </p>
             <br>
         </section>
+         <section class="contentbox" >                                                                                                
         <h2><a id="skill set">Skill Set</a></h2>
         <br>
         <h3>Technical Inventory</h3>
@@ -63,25 +71,39 @@
         <h3>Other Skills</h3>
         <p>Adobe Photoshop • Microsoft Excel</p>
 <br>
-        <h2>Projects</h2>
-    <section class ="container">
+                             </section>
+       <p>
+   <section class="contentboxprojects">
+                              
+                             <section class ="container">
         
-            
+                                                        <h2><a id="projects">Projects</a></h2>
           
         
         <article class="flex"><h3 class="flexheaders">Virtual Pet</h3>
             <p>This is the first group project I was a part of.  It was a simulation of the tamagotchi craze from the 90's.</p>
             <a href="https://github.com/mateofrito/virtual-pet" target="_blank"><img src="./socialmediaimages/github.png" width ="24" length="24">Visit my repo</a>
         </article>
+                                                                                                         <article class="flex"><h3 class="flexheaders">Virtual Pet</h3>
+            <p>This is the first group project I was a part of.  It was a simulation of the tamagotchi craze from the 90's.</p>
+            <a href="https://github.com/mateofrito/virtual-pet" target="_blank"><img src="./socialmediaimages/github.png" width ="24" length="24">Visit my repo</a>
+        </article>     
+                                                                                                                                                  <article class="flex"><h3 class="flexheaders">ATM Project</h3>
+            <p>This is one of my first personal projects.  I started with a ATM, then began adding different features as I learned more about Java.</p>
+            <a href="https://github.com/mateofrito/atm-project" target="_blank"><img src="./socialmediaimages/github.png" width ="24" length="24">Visit my repo</a>
+        
+        </article>
+                                                                                                                                                 
         <article class="flex"><h3 class="flexheaders">ATM Project</h3>
             <p>This is one of my first personal projects.  I started with a ATM, then began adding different features as I learned more about Java.</p>
             <a href="https://github.com/mateofrito/atm-project" target="_blank"><img src="./socialmediaimages/github.png" width ="24" length="24">Visit my repo</a>
         
         </article>
     </section>
-
-</main>
-<footer>
+                                                                                                                                                 </section>
+</section>
+                                                                                                                                                 
+                                                                                                                                                 <footer>
         <h4>Follow or Contact Me</h4>
         <div class ="socialmediawidgets">
         <a href="[full link to your Twitter]">
@@ -99,6 +121,10 @@
         </div>
         
     </footer>
+                                                                                                                                                 
+                                                                                                                                                 </div>                                                                                                                                                
+</main>
+
    </body> 
 
 
