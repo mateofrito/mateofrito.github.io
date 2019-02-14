@@ -25,6 +25,17 @@
   
 }
 
+.fry{
+    font-size: 48px;
+    float: left;
+    align-content: center;
+
+}
+
+.mugshot{
+    float: left;
+}
+
 .content{
   width: 99%;
   border: 1px solid black;
