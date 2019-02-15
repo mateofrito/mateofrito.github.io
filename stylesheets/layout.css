@@ -126,6 +126,11 @@ html{
       align-items: center;
       box-shadow:  0 4px 8px 0;
       background-color: black;
+      text-align: center;
+      
+      
+
+      
       
     }
     .flex{
@@ -136,6 +141,23 @@ html{
         padding: 11px;
         align-items: left;
         border: 1px solid black;
+    }
+      .herotext{
+        position: absolute;
+        align-self: center;
+        top: 50%;
+        left: 50%;
+        flex: wrap;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        
+
+        
+
+      }
+
      
       
     
