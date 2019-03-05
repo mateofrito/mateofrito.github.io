@@ -18,7 +18,7 @@
   
 }
 html{
-  background-color: #bb0000;
+  /* background-color: #fb7834; */
 }
 
 
@@ -38,7 +38,7 @@ html{
 
 .mugshot{
     float: left;
-    
+    width: 228px;
     padding: 5px;
 }
 
@@ -47,7 +47,7 @@ html{
   /* border: 1px solid black; */
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #bb0000;
+  /* background-color: #fb7834; */
   flex: wrap;
   flex-direction: center;
   align-items: center;
@@ -57,7 +57,7 @@ html{
 }
 .screenshots{
   
-  width: 75%;
+  width: 50%;
 }
 
 
@@ -78,23 +78,39 @@ html{
   }
 .bio{
   width: 99%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: white;
-  float: right;
-  box-shadow:  0 4px 8px 0;
+  float: left;
+  /* box-shadow:  0 4px 8px 0; */
   font-family: 'Montserrat', sans-serif;
  
 }
+
+.heroimg {
+  width: 100%
+}
+ 
+
     .contentbox{
   width: 99%;
   border: 1px solid black;
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: white;
-  float: right;
-  box-shadow:  0 4px 8px 0;
+  float: left;
+  /* box-shadow:  0 4px 8px 0; */
+ 
+}
+.content{
+  width: 99%;
+  border: 1px solid black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: white;
+  float: left;
+  /* box-shadow:  0 4px 8px 0; */
  
 }
     
@@ -123,13 +139,13 @@ html{
     grid-gap: 10px;
   }
 
-    .item img{ 
+    .itemimg{ 
      width: 99%;
       align-items: center;
-      box-shadow:  0 4px 8px 0;
-      background-color: black;
-      text-align: center;
       
+      
+      text-align: center;
+      display: inline-block;
       
 
       
@@ -143,6 +159,7 @@ html{
         padding: 11px;
         align-items: left;
         border: 1px solid black;
+        width: 99%;
     }
       .herotext{
         position: absolute;
@@ -194,17 +211,18 @@ html{
         width: 100%;
         align-items: center;
         position: fixed;
-        background-color: black;
+        /* background-color: black; */
+       background-color: #fb7834;
         color: white;
         height: 65px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,         0, 0, 0.19);
-        opacity: .90
+        opacity: 1;
         
         
       }
           footer {
               /* display: flex; */
-              background-color: black;
+              background: #fb7834;
               color: white;
               font-family: sans-serif;
               font-style: bold;
@@ -232,10 +250,7 @@ html{
         width: 100%;
     }
     
-    header nav{
-       
-        
-    }
+    
     figcaption{
         font-size: .75rem;
     
@@ -271,7 +286,8 @@ html{
       }
       
       ul {
-        background: black;
+        /* background: black; */
+        background: #fb7834;
           list-style: none;
           margin: 0;
           padding-left: 0;
@@ -279,7 +295,8 @@ html{
       
       li {
           color: #fff;
-        background: black;
+        /* background: black; */
+        background: #fb7834;
           display: block;
           float: left;
           padding: 1rem;
@@ -294,7 +311,8 @@ html{
       
       li:hover,
       li:focus-within {
-          background: gray;
+        background: #404d6f;
+        color: #fb7834;
           cursor: pointer;
           font-style: bold;
       }
@@ -304,7 +322,7 @@ html{
       }
       
       ul li ul {
-          background: black;
+          background: #fb7834;
           visibility: hidden;
         opacity: 0;
         min-width: 5rem;
@@ -321,7 +339,8 @@ html{
       ul li ul:focus {
         visibility: visible;
         opacity: 1;
-        display: block
+        display: block;
+        color: #fb7834;
       }
       
       ul li ul li {

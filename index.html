@@ -1,12 +1,19 @@
-<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./socialmediaimages/Fryfavicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#fb7834">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#fb7834">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width", initial-scale=1.0">
     <link rel="stylesheet" href ="./stylesheets/layout.css">
-    <title>Matt Fry - The Portfolio</title>
+    <title>Matt Fry - Developer and Designer</title>
    
 </head>
    <body>
@@ -18,12 +25,12 @@
     
     <header class ="clearfix">
            <!-- <figure class="logo"><img src="https://mateofrito.github.io/images/mattfrywhitelogo.png" alt="logo" width="200" ></figure> -->
-           <img src="./images/fries.png" width="55">
+           <a href="./index.html"><img src="./images/friesorange.png" width="55"></img></a>
            
            <nav role="navigation" class="headernav">
                <ul>
-                    <li class="nav_buttons"><a href="#Bio">Bio</a></li>
-                    <li class="nav_buttons"><a href="#projects">Projects</></li>                              
+                    <li class="nav_buttons"><a href="./about.html">About</a></li>
+                    <li class="nav_buttons"><a href="#projects">Projects</a></li>                              
                     
                     <li class="nav_buttons"><a href="#skill set">Skill Set</a></li>
                     
@@ -36,39 +43,30 @@
 <main>
      <div class="grid m-0 p-0">
              
-            <section class="content">
-            <figure class="item img">
-                <img src="./images/columbusskyline.jpg" alt="me">
+            
+            <figure class="itemimg">
+                <img class="heroimg" src="./images/frycolumbusskyline.jpg" alt="me"></img>
+                
                 
                 
             </figure>
+            <section class="content">
             <section class="bio">
 
-                <img class="mugshot" src="./images/fryscreenshot.PNG" width="228">
-            <a id="Bio"><h1>Matt Fry - The Story</h1></a>
-            
-            <p>  Growing up in the cornfields of Champaign County, Ohio, I always had a faciscation with technology.  I would always
-                take apart electronics at a young age to see how they worked.  My first taste of programming was in the mid-90's when I was
-                given an IBM AT PC after my cousing upgraded to a new laptop with the revolutionary Windows 3.1.  The computer had no games on it and  
-                the monitor was capable of producing one color, green. My friend and I discovered it had the BASIC programming language installed and I taught myself how 
-                to make simple programs.  It was after this, I decided I wanted to become a computer programmer and I attended DeVry University to 
-                major in Computer Information Systems.  When I first attempted to learn Java, there were not many resources available and my professor was
-                less than knowledgable in the subject matter, I grew frustrated and I changed majors to Business Information Systems and went into restaurant management.  
-                During my time in restaurant management, I still had a love for technology and how things worked.  After years in the restaurant
-                industry, I finally made the decision to make a career change and joined a top rated coding bootcamp, <a href="https://wecancodeit.org" target="_blank">We Can Code It</a>.</p>
-                <br>
-            <p> I am full-stack Java developer, my original frustration with Java has now grew into a love of learning more about it!  I am constantly researching and learning new technologies to make myself more valuable
-                to make myself more valuable to any employer.  </p>
-                <br>
-            <p>Outside of my professional ambitions, I am the father to a beautiful daughter, a 10 year old
-                terrier named Maggie, a golden retriever named Booker and an angry cat named Eddie.  I live with
-                the dogs and cats and my girlfriend Marie in Old North Columbus.  We enjoy biking, dining at 
-                different restaurants in Columbus.  My personal hobbies is retro game collecting, with a focus 
-              in Nintendo and Atari.  As a side note, I still own that old IBM PC that first sparked my love for programming.
+                <img class="mugshot" src="./images/mattfrylasers.jpg" width="228px">
                 
-            </p>
+            <a id="Bio"><h1>Welcome to the most exciting website, ever.</h1></a>
+            Thanks for taking time to visit my website.  I am a full-stack java developer, I have yet to decide if I like front-end or back-end better.  I guess I will never know!
+            The best part about this field is learning new technologies and that this field is in a state of constant change.  As of the writing of this page, I am in the final eight weeks of
+            boot camp at We Can Code it, in Columbus, Ohio.  I am begining my job search.  If you are a recruiter, what I can tell you is that I have spent many years as a restaurant manager
+            working 50+ hours a week, with work hours spanning anytime of day or night, I am used to working hard and working until the job is done.  To read more about me and my background, <a href="./about.html">click here!</a>
+            
+            <p>  </p>
+                <br>
+           
             <br>
         </section>
+    </section>
          <section class="contentbox" >                                                                                                
         <h2><a id="skill set">Skill Set</a></h2>
         <br>
@@ -83,13 +81,13 @@
        <p>
    <section class="contentboxprojects">
                               
-                             <section class ="container">
+                             <!-- <section class ="container"> -->
         
                                                         <h2><a id="projects">Projects</a></h2>
           
         
         <article class="flex">
-                <img class="screenshots" src="./screenshots/gitvirtualpet.png" width ="557">
+                <img class="screenshots" src="./screenshots/gitvirtualpet.png" width ="557px">
             <h3 class="flexheaders">Virtual Pet</h3>
             <p>This is the first group project I was a part of.  It was a simulation of the tamagotchi craze from the 90's.</p>
             <h5>Technologies Used</h5>
@@ -98,7 +96,7 @@
         </article>
             
         <article class="flex">
-            <img class="screenshots" src="./screenshots/gitATM.png" width ="557">
+            <img class="screenshots" src="./screenshots/gitATM.png" width ="557px">
             <h3 class="flexheaders">ATM Project</h3>
             
             <p>This is one of my first personal projects.  I started with a ATM, then began adding different features as I learned more about Java.</p>
@@ -108,7 +106,7 @@
         
         </article>
         <article class="flex">
-            <img class="screenshots" src="./screenshots/gitPOS.png">
+            <img class="screenshots" src="./screenshots/gitPOS.png" width="557px">
             <h3 class="flexheaders">Point of Sale</h3>
         
             <p>Working on a command line based POS system.  This is just the precursor to building one using more robust front-end technology.  This is no more than me planning on the basic structure for a POS.</p>
@@ -154,160 +152,3 @@
 
 
 </html>
-=======
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./socialmediaimages/Fryfavicon.ico">
-    <meta name="viewport" content="width=device-width", initial-scale=1.0">
-    <link rel="stylesheet" href ="./stylesheets/layout.css">
-    <title>Matt Fry - The Portfolio</title>
-   
-</head>
-   <body>
-    
-    
-    
-    
-    
-    
-    <header class ="clearfix">
-           <!-- <figure class="logo"><img src="https://mateofrito.github.io/images/mattfrywhitelogo.png" alt="logo" width="200" ></figure> -->
-           <img src="./images/fries.png" width="55">
-           
-           <nav role="navigation" class="headernav">
-               <ul>
-                    <li class="nav_buttons"><a href="#Bio">Bio</a></li>
-                    <li class="nav_buttons"><a href="#projects">Projects</></li>                              
-                    
-                    <li class="nav_buttons"><a href="#skill set">Skill Set</a></li>
-                    
-                            
-                 
-                    
-                </ul>
-            </nav>
-       </header>
-<main>
-     <div class="grid m-0 p-0">
-             
-            <section class="content">
-            <figure class="item img">
-                <img src="./images/columbusskyline.jpg" alt="me">
-                
-                
-            </figure>
-            <section class="bio">
-
-                <img class="mugshot" src="./images/fryscreenshot.PNG" width="228">
-            <a id="Bio"><h1>Matt Fry - The Story</h1></a>
-            
-            <p>  Growing up in the cornfields of Champaign County, Ohio, I always had a faciscation with technology.  I would always
-                take apart electronics at a young age to see how they worked.  My first taste of programming was in the mid-90's when I was
-                given an IBM AT PC after my cousing upgraded to a new laptop with the revolutionary Windows 3.1.  The computer had no games on it and  
-                the monitor was capable of producing one color, green. My friend and I discovered it had the BASIC programming language installed and I taught myself how 
-                to make simple programs.  It was after this, I decided I wanted to become a computer programmer and I attended DeVry University to 
-                major in Computer Information Systems.  When I first attempted to learn Java, there were not many resources available and my professor was
-                less than knowledgable in the subject matter, I grew frustrated and I changed majors to Business Information Systems and went into restaurant management.  
-                During my time in restaurant management, I still had a love for technology and how things worked.  After years in the restaurant
-                industry, I finally made the decision to make a career change and joined a top rated coding bootcamp, <a href="https://wecancodeit.org" target="_blank">We Can Code It</a>.</p>
-                <br>
-            <p> I am full-stack Java developer, my original frustration with Java has now grew into a love of learning more about it!  I am constantly researching and learning new technologies to make myself more valuable
-                to make myself more valuable to any employer.  </p>
-                <br>
-            <p>Outside of my professional ambitions, I am the father to a beautiful daughter, a 10 year old
-                terrier named Maggie, a golden retriever named Booker and an angry cat named Eddie.  I live with
-                the dogs and cats and my girlfriend Marie in Old North Columbus.  We enjoy biking, dining at 
-                different restaurants in Columbus.  My personal hobbies is retro game collecting, with a focus 
-              in Nintendo and Atari.  As a side note, I still own that old IBM PC that first sparked my love for programming.
-                
-            </p>
-            <br>
-        </section>
-         <section class="contentbox" >                                                                                                
-        <h2><a id="skill set">Skill Set</a></h2>
-        <br>
-        <h3>Technical Inventory</h3>
-        <p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile (Scrum)• Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • SQL • Relational Databases • Source Control / Git • AWS
-            </p>
-            <br>
-        <h3>Other Skills</h3>
-        <p>Adobe Photoshop • Microsoft Excel</p>
-<br>
-                             </section>
-       <p>
-   <section class="contentboxprojects">
-                              
-                             <section class ="container">
-        
-                                                        <h2><a id="projects">Projects</a></h2>
-          
-        
-        <article class="flex">
-                <img class="screenshots" src="./screenshots/gitvirtualpet.png" width ="557">
-            <h3 class="flexheaders">Virtual Pet</h3>
-            <p>This is the first group project I was a part of.  It was a simulation of the tamagotchi craze from the 90's.</p>
-            <h5>Technologies Used</h5>
-            <section class="techstackused">Java, GitHub, GitBash</section>
-            <a href="https://github.com/mateofrito/virtual-pet" target="_blank"><img src="./socialmediaimages/github.png" width ="24" length="24">Visit my repo</a>
-        </article>
-            
-        <article class="flex">
-            <img class="screenshots" src="./screenshots/gitATM.png" width ="557">
-            <h3 class="flexheaders">ATM Project</h3>
-            
-            <p>This is one of my first personal projects.  I started with a ATM, then began adding different features as I learned more about Java.</p>
-            <h5>Technologies Used</h5>
-            <section class="techstackused">Java, GitHub, GitBash</section>
-            <a href="https://github.com/mateofrito/atm-project" target="_blank"><img src="./socialmediaimages/github.png" width ="24" length="24">Visit my repo</a>
-        
-        </article>
-        <article class="flex">
-            <img class="screenshots" src="./screenshots/gitPOS.png">
-            <h3 class="flexheaders">Point of Sale</h3>
-        
-            <p>Working on a command line based POS system.  This is just the precursor to building one using more robust front-end technology.  This is no more than me planning on the basic structure for a POS.</p>
-            <h5>Technologies Used</h5>
-            <section class="techstackused">Java, GitHub, GitBash</section>
-            <a class="repolinks" href="https://github.com/mateofrito/point-of-sale" target="_blank"><img src="./socialmediaimages/github.png" width ="24" length="24">Visit my repo</a>
-        
-        </article>
-    </section>
-                                                                                                                                                 </section>
-</section>
-                                                                                                                                                 
-                                                                                                                                                 <footer>
-        <h4>Follow or Contact Me</h4>
-        <div class ="socialmediawidgets">
-                <a href="https://twitter.com/mateofrito1">
-                    <img title="Twitter" class="socialicons"  alt="Twitter" src="./socialmediaimages/twitter.png" width="55" height="55" />
-                    </a>
-        <a href="https://www.linkedin.com/in/matt-fry-1a966421/">
-        <img title="LinkedIn" class="socialicons"  alt="LinkedIn" src="./socialmediaimages/linkedin.png" width="55" height="55" />
-        </a>
-        <a href="mailto: mattfry@outlook.com">
-        <img title="e-mail" alt="e-mail" class="socialicons" src="./socialmediaimages/emailflat.png" width="55" height="55" />
-        </a>
-        <a href="tel: 6142149306">
-        <img title="614-214-9306" class="socialicons" alt="Call" src="./socialmediaimages/callme.png" width="55" height="55" />
-        </a>
-        <a href="sms: 6142149306">
-        <img class="socialicons" alt="Text" src="./socialmediaimages/textmessage.png" width="55" height="55"/></a>
-        </div>
-
-        
-    </footer>
-                                                                                                                                                 
-                                                                                                                                                 </div>                                                                                                                                                
-</main>
-
-   </body> 
-
-
-
-
-
-
-</html>
->>>>>>> 900509d3cf06a513ec75092673fd0b5b7e7d2ba9
