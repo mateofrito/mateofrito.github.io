@@ -1,15 +1,22 @@
 body {
-  margin: 0;
+  
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
-  overflow: hidden;
+  /* overflow: hidden; */
   background: #fb7834;
+  position:fixed;
+  z-index: 2;
+  width: 100%;
+  box-shadow: 0px 6px 4px 3px rgba(0,0,0,0.57);
+  top: 0;
+
 }
 
 .topnav a {
-  float: left;
+  float: left; 
+  
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -18,12 +25,14 @@ body {
   font-size: 17px;
 }
 
+
+
 .topnav a:hover {
   background-color: #404d6f;
   color: white;
 }
 
-.active {
+.frylogo{
   background-color: #fb7834;
   color: white;
 }
@@ -41,7 +50,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -52,3 +61,219 @@ body {
     display: block;
     text-align: left;
   }
+}
+  /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  /* margin: auto; */
+  width: 100%;
+  margin-top: 79px;
+  align-items: center;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.carousel_caption {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 15px #080000;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.flexcontent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  
+}
+.skills h2 {
+  text-align: center;
+}
+
+.skills p {
+  text-align: center;
+}
+
+.techlogos{
+  font-size: 50px;
+  padding: 8px 12px;
+  
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.flexcontent li {
+  flex: 1 1 400px;
+  margin: 10px;
+}
+
+/* The Modal (background) */
+.trigger{
+  font-size: 50px;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal_header{
+  background-color: #fb7834;
+  color: white;
+}
+
+.subsection_header{
+  text-align: center;
+}
+
+.skillset{
+  text-align: center;
+}
+
+.screenshots{
+  
+  width: 75%;
+}
+
+footer{
+  /* display: flex; */
+  background: #fb7834;
+  color: white;
+  font-family: sans-serif;
+  font-style: bold;
+  
+  max-width: 100%;
+  position: relative;
+
+}
+.twitterbutton a{
+  font-size: 48px;
+  padding: 8px;
+  color: white;
+  background-color: blue;
+}
