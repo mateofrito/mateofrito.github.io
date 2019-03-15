@@ -30,10 +30,10 @@ function showSlides(n) {
       slides[i].style.display = "none"; 
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" activedot", "");
   }
   slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " activedot";
 }
 
 
@@ -56,4 +56,36 @@ var closeButton = document.querySelector(".close-button");
     trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
+
+
+    //collapable menus
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
+
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("activeprojects");
+//     var project_desc= this.nextElementSibling;
+//     if (project_desc.style.display === "block") {
+//       project_desc.style.display = "none";
+//     } else {
+//       project_desc.style.display = "block";
+//     }
+//   });
+// }
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
   
