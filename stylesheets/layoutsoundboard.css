@@ -1,0 +1,393 @@
+body {
+  
+  font-family: 'Oswald', sans-serif;
+font-family: 'Lora', serif;
+}
+
+h1 h2 h3 h4 h5{
+  font-family:  'Oswald', sans-serif;
+}
+
+.content{
+  margin-top: 75px;
+}
+
+.topnav {
+    /* overflow: hidden; */
+    background: #fb7834;
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+    box-shadow: 0px 6px 4px 3px rgba(0,0,0,0.57);
+    top: 0;
+  
+
+}
+.navIcon{
+  padding: 10px;
+}
+.topnav a {
+  float: left; 
+  font-family:  'Oswald', sans-serif;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 45px;
+}
+.links{
+  padding: 20px;
+}
+
+.game_chart{
+  align-content: center;
+}
+
+
+
+.topnav a:hover {
+  background-color: #404d6f;
+  color: white;
+}
+
+.frylogo{
+  background-color: #fb7834;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.headers{
+  font-family:  'Oswald', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: fixed;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.slideshow-super-container{
+  text-align: center;
+}
+  /* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  /* margin: auto; */
+  width: 100%;
+  margin-top: 79px;
+  align-items: center;
+  font-family:  'Oswald', sans-serif;
+  text-align: center;
+  max-width: 1000px;
+  display: inline-block;
+  
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  max-width: 1000px;
+  
+
+}
+.game_summary{
+  text-align: left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev{
+  left:0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.carousel_caption {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 15px #080000;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activedot, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.flexcontent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  left:0;
+  
+}
+.skills h2 {
+  text-align: center;
+}
+
+.skills p {
+  text-align: center;
+}
+
+.techlogos{
+  font-size: 50px;
+  padding: 8px 12px;
+  
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.flexcontent li {
+  flex: 1 1 400px;
+  margin: 10px;
+}
+
+/* The Modal (background) */
+.trigger{
+  font-size: 50px;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index:3;
+   
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal_header{
+  background-color: #fb7834;
+  color: white;
+  font-family:  'Oswald', sans-serif;
+}
+
+.subsection_header{
+  text-align: center;
+  font-family:  'Oswald', sans-serif;
+}
+.footer_header{
+  font-family:  'Oswald', sans-serif;
+}
+
+.project_headers{
+  font-family:  'Oswald', sans-serif;
+  list-style: none;
+}
+.project_desc{
+  font-family: 'Lora', serif;
+  left: 0;
+}
+
+.skillset{
+  text-align: center;
+}
+
+.screenshots{
+  
+  width: 50%;
+}
+
+footer{
+  /* display: flex; */
+  background: #fb7834;
+  color: white;
+  font-family: sans-serif;
+  font-style: bold;
+  z-index: 2;
+  width: 100%;
+  position: relative;
+
+}
+.twitterbutton a{
+  font-size: 48px;
+  padding: 8px;
+  color: white;
+  background-color: blue;
+}
+
+/* .collapsible{
+  font-family:  'Oswald', sans-serif;
+  background-color: #fb7834;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  float: center;
+  left: 0;
+}
+
+.activeprojects, .collapsible:hover {
+  background-color: #404d6f;
+}*/
+
+/* .project_desc{
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}  */
+
+.active, .accordion:hover {
+  background-color: #404d6f;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.project_desc{
+  list-style: none;
+}
+
+.accordion {
+  font-family:  'Oswald', sans-serif;
+  background-color: #fb7834;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
